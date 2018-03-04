@@ -1,0 +1,1 @@
+*** This is a simple calculator built with html and css, the aim is to extend to a more complex calculator. so reasonable commit will be accepted***
