@@ -1,0 +1,57 @@
+<html>
+
+	<head>
+		<link href="css/calc.css" rel="stylesheet" type="text/css"/>
+	</head>
+
+	<body>
+	<p>Hi!</p>
+	<p>Thank you for visiting the page</p>
+	<p>This Simple Calculator is designed and developed by <span style="color:green">KUSADE GBENGA</span>. Kindly give a Like or Share</p>
+	<div>
+		<form name="calc">
+			<table id="calc">
+				<tr>
+					<td colspan="5"><input class="display" id="btn" name="display" type="text" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></td>
+					<td style="display: none"><input name="M" type="number"></td>
+				</tr> <br/> <br/> <br/>
+						
+				<tr>
+					<td><input id="btn" type="button"  value="7" OnClick="calc.display.value+='7'"></td>
+					<td><input id="btn" type="button" value="8"  value="7" onclick="calc.display.value+='8'"></td>
+					<td><input id="btn" type="button" value="9"  value="7" onclick="calc.display.value+='9'"></td>
+					<td><input id="btn" type="button" value="DEL" style="background-color: red" onclick="calc.display.value = calc.display.value.substr(0, calc.display.value.length - 1)"></td>
+					<td><input id="btn" type="button" value="AC" style="background-color: red" onclick="calc.display.value=''"></td>
+					
+				</tr>
+
+				<tr>
+					<td><input id="btn" type="button" value="4"  value="7" onclick="calc.display.value+='4'"></td>
+					<td><input id="btn" type="button" value="5"  value="7" onclick="calc.display.value+='5'"></td>
+					<td><input id="btn" type="button" value="6"  value="7" onclick="calc.display.value+='6'"></td>
+					<td><input id="btn" type="button" value="X"  value="7" onclick="calc.display.value+='*'"></td>
+					<td><input id="btn" type="button" value="/"  value="7" onclick="calc.display.value+='/'"></td>
+				</tr>
+
+				<tr>
+					<td><input id="btn" type="button" value="1"  value="7" onclick="calc.display.value+='1'"></td>
+					<td><input id="btn" type="button" value="2"  value="7" onclick="calc.display.value+='2'"></td>
+					<td><input id="btn" type="button" value="3"  value="7" onclick="calc.display.value+='3'"></td>
+					<td><input id="btn" type="button" value="+"  value="7" onclick="calc.display.value+='+'"></td>
+					<td><input id="btn" type="button" value="-"  value="7" onclick="calc.display.value+='-'"></td>
+				</tr>
+				<tr>
+					<td><input id="btn" type="button" value="0"  value="7" onclick="calc.display.value+='0'"></td>
+					<td><input id="btn" type="button" value="."  value="7" onclick="calc.display.value+='.'"></td>
+					<td><input id="btn" type="button" value="EXP" onclick="calc.display.value+='E'"></td>
+					<td><input id="btn" type="button" value="Ans" onclick="calc.M.value=calc.display.value"></td>
+					<td><input id="btn" type="button" value="=" onclick="calc.display.value=eval(calc.display.value)" style="background-color:orange;"></td>
+				</tr>
+
+			</table>
+		</form>
+	</div>
+		<link href="css/calc.css" rel="stylesheet" type="text/css"/>
+
+	</body>
+</html>
